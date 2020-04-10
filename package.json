@@ -1,27 +1,28 @@
 {
-  "name": "typescript-generic-type",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abhishek737/typescript-generic-type.git"
-  },
-  "keywords": [
-    "Generic",
-    "tyes"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abhishek737/typescript-generic-type/issues"
-  },
-  "homepage": "https://github.com/abhishek737/typescript-generic-type#readme",
-  "devDependencies": {
-    "ts-loader": "^6.2.2",
-    "typescript": "^3.8.3"
-  }
+    "name": "typescript-generic-type",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "tsc:w": "tsc -w",
+        "start": "npm run tsc:w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/abhishek737/typescript-generic-type.git"
+    },
+    "keywords": [
+        "Generic",
+        "tyes"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/abhishek737/typescript-generic-type/issues"
+    },
+    "homepage": "https://github.com/abhishek737/typescript-generic-type#readme",
+    "devDependencies": {
+        "ts-loader": "^6.2.2",
+        "typescript": "^3.8.3"
+    }
 }
