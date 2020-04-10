@@ -15,6 +15,10 @@ function getBigRooms<T extends IResource>(rooms: Array<T>, minSize: number): Arr
   return bigRooms;
 }
 
+// Calling a Function
+let bigRooms: Array<ConferenceRoom> = getBigRooms<ConferenceRoom>(conferenceRoomData, 2);
+
+// Function Type DEFINITION
 let getLargeRooms: <T extends IResource>(rooms: Array<T>, minSize: number) => Array<T>;
 
 getLargeRooms = getBigRooms;
