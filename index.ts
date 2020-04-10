@@ -1,5 +1,32 @@
-let junkDrawer: any[] = ["cool string", 42, true];
+import { IResource } from "./models/meetingResource";
+import { ConferenceRoom, conferenceRoomData } from "./models/conferenceRoom";
+import { PartyTent, partyTentData } from "./models/partyTent";
+import { Building, buildingData } from "./models/building";
 
-let companies: Array<string> = ["Microsoft", "Google", "Amazon"];
+function getBigRooms<T extends IResource>(rooms: Array<T>, minSize: number): Array<T> {
+  let bigRooms: Array<T> = [];
 
-let primeNums: Array<number> = [7, 11, 13];
+  rooms.forEach((r) => {
+    if (r.capacity > minSize) {
+      bigRooms.push(r);
+    }
+  });
+
+  return bigRooms;
+}
+
+let getLargeRooms: <T extends IResource>(rooms: Array<T>, minSize: number) => Array<T>;
+
+getLargeRooms = getBigRooms;
+
+let largeRooms = getLargeRooms(conferenceRoomData, 30);
+
+console.log(largeRooms);
+
+function shortenArray<T>(data: Array<T>, amountToShorten: number): Array<T> {
+  return data.splice(amountToShorten, data.length);
+}
+
+let shrinkArray: <U>(original: Array<U>, units: number) => Array<U>;
+
+shrinkArray = shortenArray;
