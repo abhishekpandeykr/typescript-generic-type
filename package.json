@@ -22,7 +22,7 @@
     },
     "homepage": "https://github.com/abhishek737/typescript-generic-type#readme",
     "devDependencies": {
-        "ts-loader": "^6.2.2",
+        "ts-loader": "^9.4.2",
         "typescript": "^3.8.3"
     }
 }
